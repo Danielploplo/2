@@ -1,0 +1,415 @@
+@media (min-width: 760px) and (max-width: 912px){
+    .container {
+        width: 748px;
+        margin: 0 auto;
+    }
+
+    .btn{
+        padding: 20px 60px;
+        margin: 20px 40px;
+        font-size: 15px;
+    }
+
+    #navbar {
+        color: rgb(5, 5, 5);
+        width: 100%;
+    }
+
+    .nav__bar__text img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar__content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #navbar label {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+    
+    /*! header */
+
+    .head__bl{
+        height: 700px;
+        width: 100%;
+    }
+
+    .head_h1{
+        font-size: 40px;
+    }
+
+    .head_p{
+        font-size: 25px;
+    }
+
+    .b2{
+        top: 420px;
+        left: 55px;
+    }
+
+    /*! section Cart */
+
+.sec__cart{
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text__h1{
+    font-size: 40px;
+width: 700px;
+}
+
+.text_p{
+    width: 300px;
+    text-align: center;
+}
+
+/* ! section */
+
+.para{
+    width: 200px;
+}
+
+.para_g_text{
+    font-size: 15px;
+    padding: 15px 70px;
+}
+
+.shad_p{
+    font-size: 15px;
+}
+
+.btn1{
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+
+/*! section Etap */
+
+#etap{
+height: 870px;
+}
+
+.etap{
+    flex-wrap: wrap;
+}
+
+/* !section Btnn */
+
+.tableee{
+width: 300px;
+}
+/*! section sec__img */
+
+.title{
+margin: 20px;
+}
+
+.left_images1, .left_images2, .left_images3,
+.right_images1, .right_images2, .right_images3{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+/*! FAQ */
+
+.faq__text{
+    text-align: start;
+    font-size: 20px;
+    width: 400px;
+    padding: 15px 0;
+}
+
+.faq__box{
+    margin:20px 0 30px 130px ; 
+}
+
+/*! CONTACT */
+
+
+.contact_items{
+    flex-wrap: wrap; 
+}
+
+.contact_items img{
+    height: 50px;
+}
+
+.contact_mail a,
+.contact_number p,
+.contact_address p{
+    font-size: 15px;
+}
+
+/*! Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.text, .email{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.phone_number{
+    font-size: 15px;
+    border-bottom: 0.3px solid #fff;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+}
+
+@media (min-width: 360px) and (max-width: 540px){
+    .container {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .btn{
+        padding: 10px 40px;
+        margin: 10px 30px;
+        font-size: 10px;
+    }
+
+    #navbar {
+        color: rgb(5, 5, 5);
+        width: 100%;
+    }
+
+    .nav__bar__text img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar__content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #navbar label {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+    
+    /*! header */
+
+    .head__bl{
+        height: 700px;
+        width: 100%;
+    }
+
+    .head_h1{
+        font-size: 30px;
+    }
+
+    .head__bl p{
+        font-size: 20px;
+    }
+
+    .b2{
+        top: 420px;
+        left: 55px;
+    }
+
+    /*! section Cart */
+
+.sec__cart{
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text__h1{
+    font-size: 20px;
+    width: 300px;
+}
+.text_p{
+    width: 300px;
+    text-align: center;
+}
+
+/* ! section */
+
+.para{
+    width: 100px;
+}
+
+.para_g_text{
+    font-size: 10px;
+    padding: 5px 20px;
+}
+
+.shad_p{
+    font-size: 5px;
+}
+
+.btn1{
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+
+.h1{
+    font-size: 20px;
+}
+.p{
+    font-size: 15px;
+}
+
+/*! section Etap */
+
+#etap{
+height: 1500px;
+}
+
+.etap{
+    flex-wrap: wrap;
+}
+
+/* !section Btnn */
+
+.tableee{
+width: 300px;
+}
+/*! section sec__img */
+
+.title {
+margin: 20px;
+}
+
+.title h2{
+    font-size: 20px;
+}
+
+.left_images1, .left_images2, .left_images3,
+.right_images1, .right_images2, .right_images3{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+/*! FAQ */
+
+.faq__text{
+    text-align: start;
+    font-size: 20px;
+    width: 300px;
+    padding: 15px 0;
+}
+
+.faq__box{
+    margin:20px 0 30px 70px ; 
+}
+
+.main_h1{
+    font-size: 10px;
+}
+
+.main_p{
+    font-size: 12px;
+}
+
+/*! CONTACT */
+
+
+.contact_items{
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_items img{
+    height: 50px;
+    margin: 20px 0 20px 50px;
+
+}
+
+.contact_mail a,
+.contact_number p,
+.contact_address p{
+    font-size: 15px;
+    text-align: center;
+}
+
+/*! Footer */
+
+.footer{
+    flex-direction: column;
+    height: 150px;
+}
+.text, .email{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 0 15px;
+}
+.phone_number{
+    font-size: 15px;
+    border-bottom: 0.3px solid #fff;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.modal__dialog {
+    max-width: 300px;
+    margin: 40px auto;
+}
+
+.modal__title {
+    font-size: 20px;
+}
+
+.modal__input {
+    margin: 10px auto 10px auto;
+    width: 200px;
+}
+
+.modal .btn {
+    width: 200px;
+}
+}

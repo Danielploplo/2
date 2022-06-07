@@ -1,0 +1,667 @@
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/adap.css' %}">
+        <link rel="shortcut icon" href="{% static './img/60ed32adbb70880282ecb703_logo-p-130x130q80.png' %}" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>ПОПОЛАМ</title>
+    </head>
+
+    <body>
+        
+        <nav id="navbar">
+            <div class="container">
+                <div class="navbar__content">
+                    <div class="nav__bar__text">
+                        <img width="80px" height="80px" class="nav__bar__img"
+                            src="{% static './img/60ed32adbb70880282ecb703_logo-p-130x130q80.png' %}" alt="">
+                        <div>
+                            <h1 class="nav__bar__text__h1">ПО<span>ПОЛАМ</span></h1>
+                            <p class="nav__bar__text__h4">Делаем полу сухую стяжку пола</p>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="toggler"><i class="fa-solid fa-bars fa-2x"></i></label>
+                        <input type="checkbox" id="toggler">
+                        <div class="menu">
+                            <ul class="list">
+                                <li><a href="#glav">Главная</a></li>
+                                <li><a href="#price">Стоимость</a></li>
+                                <li><a href="#sec__img">Наши работы</a></li>
+                                <li><a href="#contact">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header id="glav">
+            <div class="head__box">
+                <div class="pref">
+                    <i class="fa-solid fa-chevron-left fa-3x"></i>
+                </div>
+                <div class="head__block1 head__bl">
+                    <div class="container">
+                        <div class="head_title">
+                        {% for n in main_screen %}
+                            <h1 class="head_h1">
+                                {{n.first_picture_title}}</h1>
+                            <p class="head__p">{{n.first_picture_discription}}</h1></p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="head__block2 head__bl">
+                    {% for u in main_screen %}
+                    <div class="container">
+                        <h1 class="head_h1">
+                            {{u.second_picture_title}}
+                        </h1>
+                        <p class="head__p">
+                            {{u.second_picture_discription}}
+                        </p>
+                        <button class="btn b2">ЗАКАЗАТЬ СТЯЖКУ</button>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="head__block3 head__bl">
+                    <div class="container">
+                        <h1 class="head_h1">
+                            Шумоизоляция <span>от 60 руб/м<sup>2</sup></span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="head__block4 head__bl">
+                    <div class="container">
+                        <h1 class="head_h1">
+                            Выезд замерщика<span> бесплатно!</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right fa-3x"></i>
+                </div>
+            </div>
+        </header>
+        <section id="sec__one">
+            <div class="container">
+                <div class="sec__cart">
+                    <div class="sec__cart_1 cart">
+                        <img class="icon" src="{% static './icon/Vector.png' %}" alt="">
+                        <h4 class="cart__h4">Скорость работы - <br> 300 м<sup>2</sup> за смену</h4>
+                        <p class="text_p">Доверьте работу професионалам.
+                            Большой опыт работы и
+                            добросовесное отношение к делу
+                        </p>
+                    </div>
+                    <div class="carte sec__cart_2 cart">
+                        <img class="icon" src="{% static './icon/60ed32adbb708808c0ecb6e7_vacuum-cleaner (2).png' %}" alt="">
+                        <h4 class="cart__h4">На 30% дешевле</h4>
+                        <p class="text_p">Стоимость готовой смеси из магазина,
+                            значительно дороже,
+                            чем проиготовить
+                            раствор на месте.
+                        </p>
+                    </div>
+                    <div class="carte sec__cart_3 cart">
+                        <img class="icon" src="{% static './icon/Frame 10.png' %}" alt="">
+                        <h4 class="cart__h4">Аккуратная <br>
+                            бесшумная работа</h4>
+                        <p class="text_p">Не требует
+                            дополнительного выравнивания.
+                            Гарантируем чистоту,
+                            бесшумность, аккуртность и отсустви претенсий
+                            от соседей. </p>
+                    </div>
+                    <div class="carte sec__cart_4 cart">
+                        <img class="icon" src="{% static './icon/60ed32adbb7088f0a8ecb6fc_stopwatch.png' %}" alt="">
+                        <h4 class="cart__h4">Срок высыхания</h4>
+                        <p class="text_p">Минимальная длительность
+                            просеса высыхания пола,
+                            перемещения по стяжке
+                            возможно через 12 часов
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="price">
+            <div class="parat">
+                <h1 class="text__h1">Различия полусухой и жидкой стяжки</h1>
+                <p class="text_p">Полусухая технология выравнивания пола по многим критериям превосходит классический
+                    способ.</p>
+                <div class="container">
+                    <div class="para__box">
+                        <div class="para_block1 para">
+                            <p class="para_g_text">
+                                Параметры
+                            </p>
+                            <p class="shad_p">Объем работ в день</p>
+                            <p class="shad_p">Дополнительного выравнивания</p>
+                            <p class="shad_p">Пешие нагрузки</p>
+                            <p class="shad_p">Отделочные работы</p>
+                            <p class="shad_p">Прочность</p>
+                            <p class="shad_p">Допустимые перепады под 2 м²</p>
+                            <p class="shad_p">Потребление воды</p>
+                            <p class="shad_p">Возможность протечек при заливке</p>
+                            <p class="shad_p">Элемент армирования</p>
+                            <p class="shad_p">Использования спец.оборудования</p>
+                        </div>
+                        <div class="para_block2 para">
+                            <p class="para_g_text">
+                                Полусухая стяжка
+                            </p>
+                            <p class="shad_p">до 200 м²</p>
+                            <p class="shad_p">нет</p>
+                            <p class="shad_p">через 12 часов</p>
+                            <p class="shad_p">на следующий день</p>
+                            <p class="shad_p">высокая</p>
+                            <p class="shad_p">2 мм</p>
+                            <p class="shad_p">минимальное</p>
+                            <p class="shad_p">нет</p>
+                            <p class="shad_p">фиброволокно</p>
+                            <p class="shad_p">да</p>
+                        </div>
+                        <div class="para_block3 para">
+                            <p class="para_g_text">
+                                Мокрая стяжка
+                            </p>
+                            <p class="shad_p">до 50 м²</p>
+                            <p class="shad_p">да</p>
+                            <p class="shad_p">через 72 часа</p>
+                            <p class="shad_p">через 28 дней</p>
+                            <p class="shad_p">высокая</p>
+                            <p class="shad_p">10 мм</p>
+                            <p class="shad_p">максимальное</p>
+                            <p class="shad_p">да</p>
+                            <p class="shad_p">сетка</p>
+                            <p class="shad_p">нет</p>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn1">ЗАКАЗАТЬ СТЯЖКУ</button>
+            </div>
+        </section>
+        <section id="etap">
+            <h1 class="text__h1">Этапы устройства полусухой стяжки пола</h1>
+            <div class="container">
+                <div class="etap">
+                    <div class="etap__block1 etape">
+                        <p class="etap_i">1,</p>
+                        <img class="icon icon1" src="{% static './icon/60ed32adbb70887dbaecb6ef_dustpan (1).png' %}" alt="">
+                        <h1 class="etap_te_h1">Подготовительные работы</h1>
+                        <h2 class="etap_te_h2">Консультация и оценка</h2>
+                    </div>
+                    <div class="etap__block2 etape">
+                        <p class="etap_i">2,</p>
+                        <img class="icon icon1" src="{% static './icon/60ed32adbb708808c0ecb6e7_vacuum-cleaner (2).png' %}" alt="">
+                        <h1 class="etap_te_h1">Выезд специалиста на замер</h1>
+                        <h2 class="etap_te_h2">Выезд нашего специалиста на замер и оценку стоимости</h2>
+                    </div>
+                    <div class="etap__block3 etape">
+                        <p class="etap_i">3,</p>
+                        <img class="icon icon1" src="{% static './icon/60ed32adbb7088738eecb6f0_glass-cleaning.png' %}" alt="">
+                        <h1 class="etap_te_h1">Выполнение работ</h1>
+                        <h2 class="etap_te_h2">Работа на объекте, устройство стяжки</h2>
+                    </div>
+                    <div class="etap__block4 etape">
+                        <p class="etap_i">4,</p>
+                        <img class="icon icon1" src="{% static './icon/60ed32adbb70882709ecb6f9_cleaner (1).png' %}" alt="">
+                        <h1 class="etap_te_h1">Финишная затирка</h1>
+                        <h2 class="etap_te_h2">Сдача рабо</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="btnn">
+            <div class="container">
+                <div class="tabl">
+                    <h1 class="h1">Цены на полусухую стяжку пола</h1>
+                    <p class="p">Никаких скрытых платежей! Материалы включены в стоимость</p>
+                    <div class="tabl__box">
+                        <div class="tableee">
+                            <p class="para_g_text">
+                                Площадь помещения
+                            </p>
+                            <p class="shad_p">500 м²</p>
+                            <p class="shad_p">400 м²</p>
+                            <p class="shad_p">300 м²</p>
+                            <p class="shad_p">250 м²</p>
+                            <p class="shad_p">200 м²</p>
+                            <p class="shad_p">150 м²</p>
+                            <p class="shad_p">100 м²</p>
+                            <p class="shad_p">70 м²</p>
+                            <p class="shad_p">60 м²</p>
+                            <p class="shad_p">50 м²</p>
+                            <p class="shad_p">40 м²</p>
+                            <p class="shad_p">30 м²</p>
+                        </div>
+                        <div class="tableee">
+                            <p class="para_g_text">
+                                Цена от
+                            </p>
+                            <p class="shad_p">420 руб/м²</p>
+                            <p class="shad_p">435 руб/м²</p>
+                            <p class="shad_p">440 руб/м²</p>
+                            <p class="shad_p">455 руб/м²</p>
+                            <p class="shad_p">465 руб/м²</p>
+                            <p class="shad_p">485 руб/м²</p>
+                            <p class="shad_p">600 руб/м²</p>
+                            <p class="shad_p">765 руб/м²</p>
+                            <p class="shad_p">765 руб/м²</p>
+                            <p class="shad_p">805 руб/м²</p>
+                            <p class="shad_p">860 руб/м²</p>
+                            <p class="shad_p">900 руб/м²</p>
+                        </div>
+                    </div>
+                    <p class="p">* приведённые данные предварительны, точную стоимость можно получить по телефону 8 (383) 248-40-48</p>
+                    <button class="btn btn1">ЗАКАЗАТЬ СТЯЖКУ</button>
+                </div>
+        </section>
+        <section id="sec__img">
+            <div class="container">
+                <div class="sec__img_text">
+                    <h1 class="text__h1">В каких помещениях делаем <br>
+                        полусухую стяжку пола</h1>
+                </div>
+                <div class="vidy">
+                    <div class="main_title">
+                        <p class="title_vidy"></p>
+                    </div>
+                    <div class="left_images1">
+                        <div class="image">
+                        </div>
+                        <div class="title">
+                            <h2>КВАРТИРЫ</h2>
+                        </div>
+                    </div>
+                    <div class="right_images1">
+                        <div class="title">
+                            <h2>ДАЧИ, КОТЕДЖИ</h2>
+                        </div>
+                        <div class="image">
+                        </div>
+                    </div>
+                    <div class="left_images2">
+                        <div class="image">
+                        </div>
+                        <div class="title">
+                            <h2>ОФИСЫ</h2>
+                        </div>
+                    </div>
+                    <div class="right_images2">
+                        <div class="title">
+                            <h2>РАЗВЛЕКАТЕЛЬНЫЕ, ТОРГОВЫЕ ЦЕНТРЫ</h2>
+                        </div>
+                        <div class="image">
+                        </div>
+                    </div>
+                    <div class="left_images3">
+                        <div class="image">
+                        </div>
+                        <div class="title">
+                            <h2>ПОДЗЕМНЫЕ ПАРКОВКИ</h2>
+                        </div>
+                    </div>
+                    <div class="right_images3">
+                        <div class="title">
+                            <h2>ПРОМЫШЛЕННЫЕ ОБЪЕКТЫ</h2>
+                        </div>
+                        <div class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <form method="post" action="message/">
+                    {% csrf_token %}
+                    <div class="form_items">
+                        <div>
+                            <p class="h1">Остались вопросы?</p>
+                            <p class="p"> Задайте их нашему мастеру <br> и получите ответ в течении 15 минут</p>
+                        </div>
+                        <div>
+                            <input placeholder="Ваше имя" name="name" type="text">
+                            <input required placeholder="Ваш номер телефона" name="phone_number" type="phone">
+                            <textarea style="text-align: center;"  name="message" id="" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn1">ОТПРАВИТЬ ЗАЯВКУ</button>
+                </form>
+            </div>
+        </section>
+        <section id="FAQ">
+            <div class="container">
+                <p class="faq_faq">FAQ</p>
+                <div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Что такое полусухая стяжка ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Цементно-песчаная смесь с добавление фиброволокна и минимальным количеством воды
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Выполняете ли Вы демонтаж ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Выполняем за отдельную плату
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                При какой тмпературе можно выполнять работы?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                до -25 на улице и от +5 в помещении
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                На каких видах объектов Вы выполняете услуги ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Мы работаем везде: квартиры, коттеджи и частные дома, хоз постройки, промышленные объекты и здания.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Со скольких квадратных метров ваши специалисты начинают делать полусухую стяжку пола?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Минимальная площадь 10 м2.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                За какое время Вы выполняете заказ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Объем может составлять до 250 м2 за один рабочий день.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Что нужно делать раньше: стяжку или шпаклевать стены?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Полусухую стяжку пола нужно делать до шпаклевки стен.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Через сколько дней можно работать или ходить по полу ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Через сутки можно ходить, через десять дней можно продолжать ремонт и ставить тяжелую мебель.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Какие строительные материалы нужны для полусухой стяжки ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Цемент не менее пц 400, песок, фиброволокно, вода
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Каков срок эксплаутации полусухой стяжки ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Срок эксплуатации полусухой стяжки неограничен.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Как подготовить помещение перед проведением работ ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Достаточно освободить помещение от всего инвентаря и убрать весь строительный и другой мусор.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Пропускает ли полусухая стяжка воду ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Такое возможно только в местах примыкания к стенам. Сама стяжка воду не пропускает.
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="faq__block">
+                    <div class="faq__box">
+                        <div class="faq__text">
+                            <p class="faq_h1_text main_h1">
+                                Сколько весит стяжка, не будет ли большой нагрузки на плиты перекрытия ?
+                            </p>
+                            <p class="faq_text_h1 main_p">
+                                Вес стяжки на 1 кв м и 1 см слой = 17 кг
+                            </p>
+                        </div>
+                        <div class="faq__icon">
+                            <div class="up">
+                                <i class="fa-solid fa-angle-up fa-2x"></i>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-angle-down fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact"></div>
+                <div class="container">
+                    <div class="contact_h1">
+                        <p>Контакты</p>
+                    </div>
+                    <div class="contact_items">
+                        <div class="contact_mail">
+                            {% for x in contact_items %}
+                            <img class="con_i" src="{% static './icon/60ed32adbb70881f28ecb6d1_mail.png' %}" alt="">
+                            <a href="">{{x.contact_email}}</a>
+                        </div>
+                            {% endfor %}
+                        <div class="contact_number">
+                            {% for i in contact_items %}
+                            <img class="con_i" src="{% static './icon/60ed32adbb70888635ecb6e3_phone-call.png' %}" alt="">
+                            <p>{{i.contact_number}}</p>
+                        </div>
+                            {% endfor %}
+                        <div class="contact_address">
+                            <img class="con_i" src="{% static './icon/60ed32adbb7088b760ecb6d5_placeholder.png' %}" alt="">
+                            <p>Электрозаводской проезд 1, <br> оф. 108</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer">
+                <div class="text">
+                    <p>Пополам - полусухая стяжка пола</p>
+                    {% for b in contact_items %}
+                    <a href="">{{b.contact_email}}</a>
+                    {% endfor %}
+                </div>
+                <div class="email">
+                    <p>г.Новосибирск и Новосибирская</p>
+                    <p>область</p>
+                </div>
+                <div class="phone_number">
+                    {% for v in contact_items %}
+                    <p>{{ v.contact_number }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </footer>
+
+        <!-- form  -->
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form method="post" action="order/">
+                        {% csrf_token %}
+                        <div class="modal__close">&times;</div>
+                        <div class="modal__title">ОСТАВИТЬ ЗАЯВКУ !</div>
+                        <p class="modal__p">Менеджер свяжется с Вами в течение 15 минут</p>
+                        <input placeholder="Ваше имя" name="clients_name" type="text" class="modal__input">
+                        <input required placeholder="Ваш номер телефона" name="clients_phone_number" type="phone" class="modal__input">
+                        <button class="btn btn_dark btn_min">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div>
+    </div>
+        <!-- form  -->
+
+        <script src="{% static './js/main.js' %}"></script>
+
+    </body>
+
+    </html>
